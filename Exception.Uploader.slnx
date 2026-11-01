@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Exception.Uploader.Core/Exception.Uploader.Core.csproj" />
+    <Project Path="src/Exception.Uploader/Exception.Uploader.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Exception.Uploader.Tests/Exception.Uploader.Tests.csproj" />
+  </Folder>
+</Solution>

@@ -1,0 +1,241 @@
+
+ExceptionJournalDB = {
+	["class"] = "MAGE",
+	["counters"] = {
+		["drownDeaths"] = 0,
+		["fallDeaths"] = 1,
+		["flights"] = 1,
+		["hearthstones"] = 1,
+		["jumps"] = 5,
+		["killedBy"] = {
+			["Hogger"] = 1,
+		},
+		["kills"] = {
+			["Kobold Vermin"] = 1,
+			["Young Wolf"] = 3,
+		},
+		["longestSession"] = 833,
+		["maxMoney"] = 1250,
+	},
+	["createdAt"] = 1789635600,
+	["entries"] = {
+		[1] = {
+			["at"] = 1789636211,
+			["level"] = 2,
+			["screenshot"] = "WoWScrnShot_091726_111012",
+			["seq"] = 1,
+			["type"] = "LevelUp",
+			["zone"] = "Elwynn Forest",
+		},
+		[10] = {
+			["at"] = 1789636235,
+			["data"] = {
+				["guild"] = "Exception",
+			},
+			["level"] = 2,
+			["screenshot"] = "WoWScrnShot_091726_111036",
+			["seq"] = 10,
+			["type"] = "GuildJoined",
+			["zone"] = "Westfall",
+		},
+		[11] = {
+			["at"] = 1789636240,
+			["level"] = 2,
+			["screenshot"] = "WoWScrnShot_091726_111041",
+			["seq"] = 11,
+			["type"] = "FirstMount",
+			["zone"] = "Westfall",
+		},
+		[12] = {
+			["at"] = 1789636245,
+			["data"] = {
+				["text"] = "first",
+			},
+			["level"] = 2,
+			["screenshot"] = "WoWScrnShot_091726_111046",
+			["seq"] = 12,
+			["type"] = "Note",
+			["zone"] = "Westfall",
+		},
+		[13] = {
+			["at"] = 1789636245,
+			["data"] = {
+				["text"] = "second",
+			},
+			["level"] = 2,
+			["screenshot"] = "WoWScrnShot_091726_111046",
+			["seq"] = 13,
+			["type"] = "Note",
+			["zone"] = "Westfall",
+		},
+		[14] = {
+			["at"] = 1789636250,
+			["data"] = {
+				["text"] = "Finally killed Hogger",
+			},
+			["level"] = 2,
+			["seq"] = 14,
+			["type"] = "Note",
+			["zone"] = "Westfall",
+		},
+		[15] = {
+			["at"] = 1789636250,
+			["level"] = 2,
+			["screenshot"] = "WoWScrnShot_091726_111050",
+			["seq"] = 15,
+			["type"] = "Screenshot",
+			["zone"] = "Westfall",
+		},
+		[2] = {
+			["at"] = 1789636217,
+			["data"] = {
+				["ability"] = "Vicious Slice",
+				["killer"] = "Hogger",
+			},
+			["level"] = 2,
+			["seq"] = 2,
+			["type"] = "Death",
+			["zone"] = "Elwynn Forest",
+		},
+		[3] = {
+			["at"] = 1789636219,
+			["data"] = {
+				["environmental"] = "Falling",
+			},
+			["level"] = 2,
+			["seq"] = 3,
+			["type"] = "Death",
+			["zone"] = "Elwynn Forest",
+		},
+		[4] = {
+			["at"] = 1789636221,
+			["level"] = 2,
+			["seq"] = 4,
+			["type"] = "Death",
+			["zone"] = "Elwynn Forest",
+		},
+		[5] = {
+			["at"] = 1789636223,
+			["level"] = 2,
+			["seq"] = 5,
+			["type"] = "Death",
+			["zone"] = "Elwynn Forest",
+		},
+		[6] = {
+			["at"] = 1789636225,
+			["data"] = {
+				["name"] = "Westfall",
+			},
+			["level"] = 2,
+			["seq"] = 6,
+			["type"] = "ZoneDiscovered",
+			["zone"] = "Westfall",
+		},
+		[7] = {
+			["at"] = 1789636225,
+			["data"] = {
+				["instanceType"] = "party",
+				["name"] = "The Deadmines",
+			},
+			["level"] = 2,
+			["seq"] = 7,
+			["type"] = "DungeonEntered",
+			["zone"] = "Westfall",
+		},
+		[8] = {
+			["at"] = 1789636225,
+			["data"] = {
+				["profession"] = "Tailoring",
+			},
+			["level"] = 2,
+			["seq"] = 8,
+			["type"] = "ProfessionLearned",
+			["zone"] = "Westfall",
+		},
+		[9] = {
+			["at"] = 1789636225,
+			["data"] = {
+				["profession"] = "Tailoring",
+				["skill"] = 75,
+			},
+			["level"] = 2,
+			["seq"] = 9,
+			["type"] = "ProfessionMilestone",
+			["zone"] = "Westfall",
+		},
+	},
+	["faction"] = "Alliance",
+	["firstMount"] = true,
+	["guild"] = "Exception",
+	["hardcore"] = false,
+	["instances"] = {
+		["The Deadmines"] = true,
+	},
+	["journalKey"] = "7a74ce5c012576ba",
+	["lastPlayed"] = 640,
+	["levels"] = {
+		[1] = {
+			["deaths"] = 0,
+			["kills"] = 4,
+			["played"] = 0,
+			["quests"] = 1,
+			["xpKill"] = 180,
+			["xpQuest"] = 80,
+		},
+		[2] = {
+			["deaths"] = 4,
+			["kills"] = 0,
+			["money"] = 95,
+			["played"] = 638,
+			["quests"] = 0,
+			["reachedAt"] = 1789636211,
+			["xpKill"] = 0,
+			["xpQuest"] = 0,
+			["zone"] = "Elwynn Forest",
+		},
+	},
+	["name"] = "Krise Stormborn",
+	["professions"] = {
+		["Tailoring"] = 76,
+	},
+	["professionsBaselined"] = true,
+	["race"] = "Human",
+	["realm"] = "Forever",
+	["recipes"] = {
+		["Enchanting"] = {
+			[7418] = {
+				["name"] = "Enchant Bracer - Minor Health",
+			},
+		},
+		["Tailoring"] = {
+			[2385] = {
+				["item"] = 2570,
+				["name"] = "Linen Cloak",
+			},
+			[3866] = {
+				["item"] = 4333,
+				["name"] = "Stylish Red Shirt",
+			},
+			[3914] = {
+				["item"] = 4343,
+				["name"] = "Brown Linen Pants",
+			},
+			[3915] = {
+				["item"] = 4344,
+				["name"] = "Brown Linen Shirt",
+			},
+		},
+	},
+	["seq"] = 15,
+	["startLevel"] = 1,
+	["upload"] = {
+		["addon"] = "2.0.0-test",
+		["data"] = "EXJ1:q1ZKTEnJz1OyUjLSM9Az0C1JLS5R0lFKzkgsSkwuSS1SsqpWSs5JLC4GqvB1dHcFyqUBJTLBWhxzcjIT85JTgYLppZk5KUAh14rk1AKwtI4S0IyU5PyiVCWrtMSc4lQdpaz80qK8xBzv1EqgSvNEc5PkVNNkA0MjU3OzpESgBqh8cEliUYlPallqjpKVIapoaopjCVDQ3MLSzNjUzMBARykHos5IRykvMRdolZJ3UWZxqkJwSX5RblJ+EcgdQJ+AJDxKcxPB3NTEnFwg3w3otDKgD2uB3s0vzQN6FujJaqWUovzyPJfUxJIMIBdoAdDtOTAu0DVpOZnpGSUQdkYq0EkZxSX5eakQgazS3AIgy1RHKTszJyc1xQno0WhgAIKMByuAutEjPz0dZHMsRCFQC0KVMVxVJFAgXSE8PycN6EYspnjnJ+XnpCiEpRblZuaBDcvJz0sHRmBwanExOIYsjIGm5SZW+AJdCHQKMKSBHirISaxMBcaVmQmQU5Jfkgj3ngmU7w1xE4wbWAo0E+RBYEil5pUUZYJ8C3RwIjwqzIwMgc5CREVxclFqal5xRj5QhVJ4fnhwclFeMJAXb2BpaG5kFm9oaAiMdmBcFKcWgn1UUlkA8hE40kMLgBJVQBeDklNOeWVengIoqoDpEhQKKJaa6yilJJYkgqItMSkzJ7MElLDCMpMz80uLFYJzMsFJExwVwIQMD3UUl4IcAKShDgCHBNHWWyKsT80ryyzKz8sFhk8i0GQlN2CqycxLx2IZMEbIscwINYBBJoHihxyTgC5AMwmYYMkyCagPFgDQNBkOVAfKMVg8bga3JApouEtmcXI+MPsBUyLcNiTNuC3KzCsuARU6IRCzCoBZsBJoBNT+kIxUBaAfUoA5AphKMR0BTDEwnwIzV2p+niso45PsiIKi/DRYJlMKSczMyS/CHtsWcPsC4Fp8gMVGHrWsBNoDSuBAn5li2g5MoBi2+2bmAK0DWUzYfmMk+zFLeFT7iMjyxmbwLA8qeiAucweZ65UPjC9iQgRUZpFmqYkh3FJEQeOWWVRc4gsuUImwEykUSlIrQHalgfSTHgAmiABAlDl++SXExAUWVxSnJufnpVDkDERpRKQzQDUImjPcMoHVc06lAqTOU8BZzBoiCiwSLCPNa6YGcK8hCjWgQphGLHYC683UioJ81MaFmQmo6szOBAavFawFAtQMdgyk9ktBNBGgdTjQe1DHAhMarJaFV7iOsCaNmTGwUCiE1ak6ShUFoPoWyLQAqq0oANe2wILDABQYMEuARkMtQQmRXEi9bgn0KrxWRzYdqBjY2knOQPEZuK6GWYpsJZCNvdgHhhCi9IH4HlrcuuYBW4p5JZCCqCg1ObMA2jbIBDrF3MQQ6BZUlQpOoNZYkYKugm9mXn6RggewMQascGpjQb6FleFIhRu6mUbGFkDPZpakAltwwHYj0MlQTT7AAiRPwTknPzEbnIxAio0tzICVDkQxMD4RLavgksqczOIMhSBgcg3OyCyCVG1gLZagVArTYoLQ4gRqFipAbAkAegRUucC1wJ0E1ALUjkUL1BZgSMKKazMQpwwYK7UA",
+		["exportedAt"] = 1789636433,
+	},
+	["version"] = 1,
+	["zones"] = {
+		["Elwynn Forest"] = true,
+		["Westfall"] = true,
+	},
+}

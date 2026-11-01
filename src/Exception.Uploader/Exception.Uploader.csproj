@@ -1,0 +1,47 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>ExceptionUploader</AssemblyName>
+    <RootNamespace>Exception.Uploader</RootNamespace>
+    <AvaloniaUseCompiledBindingsByDefault>true</AvaloniaUseCompiledBindingsByDefault>
+    <ApplicationIcon>Assets\icon.ico</ApplicationIcon>
+    <Version>1.0.0</Version>
+
+    <!-- Where uploader.json says which version is newest: the latest release of this repository -->
+    <UploaderDownloadUrl>https://github.com/hkb-mats/exception-uploader/releases/latest/download</UploaderDownloadUrl>
+    <UploaderApiUrl>https://api.exception-guild.com/</UploaderApiUrl>
+    <UploaderPortalUrl>https://forever.exception-guild.com/profile</UploaderPortalUrl>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(PublishSingleFile)' == 'true'">
+    <SelfContained>true</SelfContained>
+    <PublishTrimmed>true</PublishTrimmed>
+    <TrimMode>partial</TrimMode>
+    <EnableCompressionInSingleFile>true</EnableCompressionInSingleFile>
+    <IncludeNativeLibrariesForSelfExtract>true</IncludeNativeLibrariesForSelfExtract>
+    <DebugType>none</DebugType>
+    <InvariantGlobalization>true</InvariantGlobalization>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <AvaloniaResource Include="Assets\**" />
+    <AssemblyMetadata Include="UploaderDownloadUrl" Value="$(UploaderDownloadUrl)" />
+    <AssemblyMetadata Include="UploaderApiUrl" Value="$(UploaderApiUrl)" />
+    <AssemblyMetadata Include="UploaderPortalUrl" Value="$(UploaderPortalUrl)" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Avalonia" Version="12.1.4" />
+    <PackageReference Include="Avalonia.Desktop" Version="12.1.4" />
+    <PackageReference Include="Avalonia.Themes.Fluent" Version="12.1.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Exception.Uploader.Core\Exception.Uploader.Core.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,49 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="Exception.Uploader.MainWindow"
+        Title="Exception Uploader"
+        Icon="avares://ExceptionUploader/Assets/icon.png"
+        Width="520" Height="560" MinWidth="420" MinHeight="460"
+        WindowStartupLocation="CenterScreen">
+  <ScrollViewer>
+    <StackPanel Margin="24" Spacing="16">
+      <StackPanel Spacing="4">
+        <TextBlock Text="Exception Uploader" FontSize="22" FontWeight="SemiBold" />
+        <TextBlock Name="Status" TextWrapping="Wrap" Foreground="#10b981" />
+      </StackPanel>
+
+      <TextBlock Text="Sends your leveling journal to the guild portal when you log out of WoW. It reads only the addon's Exception.lua files and never touches the game."
+                 TextWrapping="Wrap" Opacity="0.75" />
+
+      <StackPanel Spacing="6">
+        <TextBlock Text="1. Upload token" FontWeight="SemiBold" />
+        <TextBlock Text="Create one on your Profile page on the portal and paste it here." TextWrapping="Wrap" Opacity="0.75" />
+        <Grid ColumnDefinitions="*,Auto" ColumnSpacing="8">
+          <TextBox Name="TokenBox" PasswordChar="•" PlaceholderText="exu_..." />
+          <Button Grid.Column="1" Content="Save" Click="OnSaveToken" />
+        </Grid>
+        <Button Content="Open the portal" Click="OnOpenPortal" />
+      </StackPanel>
+
+      <StackPanel Spacing="6">
+        <TextBlock Text="2. World of Warcraft folder" FontWeight="SemiBold" />
+        <Grid ColumnDefinitions="*,Auto" ColumnSpacing="8">
+          <TextBlock Name="FolderText" VerticalAlignment="Center" TextWrapping="Wrap" />
+          <Button Grid.Column="1" Content="Choose" Click="OnChooseFolder" />
+        </Grid>
+        <TextBlock Name="FolderHint" TextWrapping="Wrap" Opacity="0.75" />
+      </StackPanel>
+
+      <CheckBox Name="StartAtLogin" Content="Start when I log in to this computer" Click="OnStartAtLoginClicked" />
+
+      <StackPanel Spacing="6">
+        <TextBlock Text="Characters" FontWeight="SemiBold" />
+        <ItemsControl Name="Characters" />
+        <TextBlock Name="NoCharacters" Text="Log out of WoW once with the addon on, and your characters show here."
+                   TextWrapping="Wrap" Opacity="0.75" />
+      </StackPanel>
+
+      <Button Name="UpdateButton" IsVisible="False" Click="OnOpenDownload" />
+    </StackPanel>
+  </ScrollViewer>
+</Window>
