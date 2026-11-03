@@ -1,6 +1,7 @@
 ; The Windows installer, built by .github/workflows/uploader.yml:
 ;   iscc /DAppVersion=1.0.0 /DSourceExe=<path to ExceptionUploader.exe> /O<output folder> installer.iss
 ; Installs for the current user, so it needs no administrator rights.
+; The release workflow adds /DSign=1 and /Ssigner=<command>, which signs the uninstaller and the installer.
 
 [Setup]
 AppId={{6F0C2B7E-4B1D-4E7A-9C33-2A5D8E1F7B40}
@@ -20,6 +21,9 @@ Compression=lzma2
 SolidCompression=yes
 WizardStyle=modern
 CloseApplications=force
+#ifdef Sign
+SignTool=signer
+#endif
 
 [Files]
 Source: "{#SourceExe}"; DestDir: "{app}"; Flags: ignoreversion
