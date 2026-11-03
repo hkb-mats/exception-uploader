@@ -49,9 +49,9 @@ Each release lists the commit it was built from. With the [GitHub CLI](https://c
 gh attestation verify Exception-Uploader-Setup.exe --repo hkb-mats/exception-uploader
 ```
 
-The downloads aren't code-signed yet, so Windows and macOS warn the first time you open them. On Windows
-choose More info, then Run anyway. On a Mac open System Settings, then Privacy & Security, and choose
-Open Anyway.
+The Windows downloads are signed by HK Bits AS. Windows may still warn while the signature is new: choose
+More info, check the publisher, then choose Run anyway. The Mac downloads aren't signed yet: open System
+Settings, then Privacy & Security, and choose Open Anyway.
 
 ## Build it yourself
 
